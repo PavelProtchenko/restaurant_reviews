@@ -1,0 +1,26 @@
+{
+  "name": "restaraunt_reviews",
+  "version": "1.0.0",
+  "description": "Restaurant Reviews API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "build": "tsc",
+    "start": "node --env-file=.env dist/index.js"
+  },
+  "author": "Pavel Protchenko",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nanoid": "^5.1.7",
+    "redis": "^5.11.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
