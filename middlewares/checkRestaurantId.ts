@@ -12,7 +12,7 @@ export const checkRestaurantExists = async (req: Request, res: Response, next: N
     const restaurantKey = restaurantKeyById(restaurantId);
     const exists = await client.exists(restaurantKey);
     if(!exists) {
-        return errorResponse(res, 404, "Restaurant Not Found");
+        return errorResponse(res, 404, "Restaurant not found");
     }
     next();
 }
